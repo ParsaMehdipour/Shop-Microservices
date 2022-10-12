@@ -26,6 +26,8 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 
+app.PrepPopulation();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
