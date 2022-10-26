@@ -21,6 +21,7 @@ builder.Services.AddDbContext<CategoryDbContext>(opt =>
 #region Service Injections
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 #endregion
 
