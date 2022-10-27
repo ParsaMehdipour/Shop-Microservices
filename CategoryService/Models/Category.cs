@@ -4,7 +4,7 @@ namespace CategoryService.Models;
 
 public class Category
 {
-    public int Id { get; private set; }
+    public long Id { get; private set; }
     public string Name { get; private set; }
     public DateTime CreateDate { get; private set; }
 
