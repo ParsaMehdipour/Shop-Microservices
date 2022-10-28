@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: categories-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: categoryservice
+  template:
+    metadata:
+      labels:
+        app: categoryservice
+    spec:
+      containers:
+        - name: categoryservice
+          image: devparsa/categoryservice:latest
